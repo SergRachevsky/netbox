@@ -716,6 +716,8 @@ class InterfaceTypeChoices(ChoiceSet):
     TYPE_80211AC = 'ieee802.11ac'
     TYPE_80211AD = 'ieee802.11ad'
     TYPE_80211AX = 'ieee802.11ax'
+    TYPE_80211BGN = 'ieee802.11bgn'
+    TYPE_80211ANAC = 'ieee802.11anac'
 
     # Cellular
     TYPE_GSM = 'gsm'
@@ -820,10 +822,12 @@ class InterfaceTypeChoices(ChoiceSet):
             (
                 (TYPE_80211A, 'IEEE 802.11a'),
                 (TYPE_80211G, 'IEEE 802.11b/g'),
+                (TYPE_80211BGN, 'IEEE 802.11b/g/n'),
                 (TYPE_80211N, 'IEEE 802.11n'),
                 (TYPE_80211AC, 'IEEE 802.11ac'),
                 (TYPE_80211AD, 'IEEE 802.11ad'),
                 (TYPE_80211AX, 'IEEE 802.11ax'),
+                (TYPE_80211ANAC, 'IEEE 802.11a/n/ac'),
             )
         ),
         (
